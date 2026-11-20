@@ -1149,3 +1149,12 @@ button.cv-download{
         right: 20px;
     }
 }
+
+.footer-content a{
+    color: var(--rosu-5);
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
