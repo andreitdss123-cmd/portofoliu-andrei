@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style5.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <main class="todo">
+        <h1>To-Do App</h1>
+
+        <form class="todo-form" novalidate>
+            <input type="text" id="task-input" placeholder="Ce ai de făcut?" aria-label="Task nou" autocomplete="off">
+
+            <div class="field">
+                <label for="start-date" class="labelDate">Data început</label>
+                <input type="date" id="start-date" required>
+            </div>
+
+            <div class="field">
+                <label for="stop-date" class="labelDate">Data sfârșit</label>
+                <input type="date" id="stop-date" required>
+            </div>
+
+            <button type="submit" id="add-btn">Adaugă</button>
+        </form>
+
+        <ul id="task-nou"></ul>
+    </main>
+
+    <script src="index5.js" defer></script>
+</body>
+</html>

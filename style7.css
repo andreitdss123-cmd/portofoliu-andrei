@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --bg: #121214;
+    --panel: #1c1c21;
+    --display: #0d0d0f;
+    --key: #2c2c34;
+    --key-text: #f4f4f5;
+    --operator: #3a3a46;
+    --accent: #e8385a;
+    --clear: #ff7a59;
+    --muted: #9a9aa5;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.calculator {
+    background-color: var(--panel);
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px auto 0;
+    border: 1px solid #2a2a31;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+}
+
+#result {
+    width: 100%;
+    padding: 18px 14px;
+    font-family: inherit;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    color: var(--key-text);
+    background-color: var(--display);
+    border-radius: 14px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px 10px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.number {
+    background-color: var(--key);
+    color: var(--key-text);
+}
+
+.decimal {
+    background-color: var(--key);
+    color: var(--muted);
+}
+
+.operator {
+    background-color: var(--operator);
+    color: var(--accent);
+}
+
+.clear {
+    background-color: var(--clear);
+    color: #1a1a1a;
+}
+
+.equals {
+    background-color: var(--accent);
+    color: #fff;
+    grid-row: span 3;
+}
